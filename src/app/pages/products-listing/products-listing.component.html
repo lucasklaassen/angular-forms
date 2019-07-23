@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container mb-5">
+  <div class="py-5 text-center">
+    <img
+      class="d-block mx-auto mb-4"
+      src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg"
+      alt=""
+      width="72"
+      height="72"
+    />
+    <h2>Cart Experience</h2>
+    <p class="lead">
+      Add items to your cart and proceed to checkout.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <app-cart></app-cart>
+      <button [routerLink]="['/checkout']" routerLinkActive="router-link-active" class="btn btn-success w-100">
+        Proceed to Checkout
+      </button>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <div class="card-deck mb-3 text-center">
+        <app-product *ngFor="let product of products" [product]="product"></app-product>
+      </div>
+    </div>
+  </div>
+</div>

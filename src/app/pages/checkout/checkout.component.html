@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container mb-5">
+  <div class="py-5 text-center">
+    <img
+      class="d-block mx-auto mb-4"
+      src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg"
+      alt=""
+      width="72"
+      height="72"
+    />
+    <h2>Checkout Experience</h2>
+    <p class="lead">
+      Purchase products you added to your cart.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <app-cart></app-cart>
+      <div class="d-flex flex-row">
+        <button [routerLink]="['/product-list']" routerLinkActive="router-link-active" class="btn btn-info w-25">
+          Back to Product List
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

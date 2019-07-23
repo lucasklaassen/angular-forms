@@ -1,0 +1,16 @@
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">
+    <h4 class="my-0 font-weight-normal">{{ product.name }}</h4>
+  </div>
+  <div class="card-body">
+    <h1 class="card-title pricing-card-title">
+      {{ product.price | currency }}
+    </h1>
+    <ul class="list-unstyled mt-3 mb-4">
+      <li *ngFor="let detail of product.details">{{ detail }}</li>
+    </ul>
+    <button (click)="addToCart()" type="button" class="btn btn-lg btn-block btn-primary">
+      Add to cart
+    </button>
+  </div>
+</div>

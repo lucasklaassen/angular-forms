@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "editor.formatOnSaveTimeout": 3000,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
