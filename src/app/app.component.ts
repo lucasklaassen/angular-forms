@@ -8,7 +8,7 @@ import { Product } from './core/models/product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'angular-services';
+  title = 'angular-forms';
 
   products: Product[] = [];
 

@@ -7,7 +7,7 @@ import { Product } from 'src/app/core/models/product.model';
   templateUrl: './products-listing.component.html'
 })
 export class ProductsListingComponent implements OnInit {
-  title = 'angular-services';
+  title = 'angular-forms';
 
   products: Product[] = [];
 
